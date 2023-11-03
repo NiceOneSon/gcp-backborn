@@ -10,7 +10,7 @@ resource "google_compute_subnetwork" "vpc_subnetwork" {
   ip_cidr_range = "10.0.0.0/16"
 }
 
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "this" {
   name         = "my-instance"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
